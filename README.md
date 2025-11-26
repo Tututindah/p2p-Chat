@@ -10,7 +10,7 @@ After a short handshake through a lightweight WebSocket signaling server, all me
 - **Local ledger** – chat history persisted in `localStorage` (`ledger_messages_<roomId>`)
 - **Offline queue** – messages sent while the peer is offline are stored locally and delivered when they come online
 - **Simple signaling server** – only used for SDP exchange, ICE candidates and presence (Node.js + `ws`)
-- Perfect for Farcaster frames, mini-apps, or any Web3 dApp needing private 1-to-1 chat
+- Perfect for or any Web3 dApp needing private 1-to-1 chat
 
 ## Tech Stack
 - React + TypeScript
@@ -31,7 +31,7 @@ After a short handshake through a lightweight WebSocket signaling server, all me
 ```bash
 # 1. Clone & install
 clone these repo
-cd farcaster-frontliner-chat
+cd p2p-Chat
 npm install
 
 # 2. Start the signaling server (in a separate terminal)
@@ -71,4 +71,4 @@ Feel free to open issues or PRs! Main areas for improvement:
 - Support group chats (multi-party WebRTC mesh or SFU)
 
 Enjoy truly private, wallet-to-wallet chat on Cardano!
-
+```
